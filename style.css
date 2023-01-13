@@ -20,10 +20,6 @@ li {
   list-style: none;
 }
 
-img {
-  /* width: 100%; */
-}
-
 
 /* ============ */
 /* Header Style */
@@ -47,7 +43,8 @@ img {
 }
 
 .header .container {
-  width: 880px;
+  max-width: 880px;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -92,7 +89,7 @@ img {
 @media only screen and (max-width: 768px) and (min-width: 426px) {
   /* Header */
   .header .container {
-    width: 100%;
+    width: 90%;
   }
 }
 
