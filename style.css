@@ -1,3 +1,120 @@
+/* ======================= */
+/* Initializing Stylesheet */
+/* ======================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: red;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  /* width: 100%; */
+}
+
+
+/* ============ */
+/* Header Style */
+/* ============ */
+.header {
+  background-color: #562EFF;
+  padding: 26px 0;
+}
+
+.header,
+.header a {
+  color: #FFFFFF;
+}
+
+.header .container,
+.header .brand,
+.header .nav-list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header .container {
+  width: 880px;
+  margin: 0 auto;
+}
+
+.header .brand,
+.header .nav {
+  flex: 1;
+}
+
+.header .brand img {
+  width: 40px;
+  margin-right: 16px;
+}
+
+.header .brand .brand-name {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.header .nav-list {
+  justify-content: flex-end;
+}
+
+.header .nav-item {
+  margin-left: 36px;
+}
+
+.header .nav-item a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+
+
+
+/* ============ */
+/* Media Query  */
+/* ============ */
+/* For Tablet Device */
+@media only screen and (max-width: 768px) and (min-width: 426px) {
+  /* Header */
+  .header .container {
+    width: 100%;
+  }
+}
+
+
+/* For Mobile Device */
+@media only screen and (max-width: 425px) {
+  /* Header */
+  .header .container {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .header .nav {
+    width: 100%;
+  }
+
+  .header .nav-list {
+    justify-content: space-around;
+  }
+
+  .header .nav-item {
+    margin-left: 0;
+  }
 }
