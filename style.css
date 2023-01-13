@@ -1,6 +1,7 @@
 /* ======================= */
 /* Initializing Stylesheet */
 /* ======================= */
+
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +10,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  background-color: #e5e5e5;
 }
 
 a {
@@ -22,11 +24,13 @@ li {
 
 
 /* ============ */
-/* Header Style */
+/* Header Section Style */
 /* ============ */
+
 .header {
   background-color: #562EFF;
   padding: 26px 0;
+  margin-bottom: 36px;
 }
 
 .header,
@@ -79,24 +83,91 @@ li {
 }
 
 
+/* ================== */
+/* Main Section Style */
+/* ================== */
+
+.main {
+  max-width: 870px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Top Player and Top Blog Section */
+.players-and-blog {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+/* Top Player Section */
+.top-player .title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #562EFF;
+  margin-bottom: 30px;
+}
+
+.top-player .players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 30px;
+}
+
+.top-player .player {
+  display: flex;
+  align-items: center;
+}
+
+.top-player .players img {
+  width: 60px;
+  margin-right: 8px;
+}
+
+.top-player .players .player-name {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
 
 
 
 /* ============ */
 /* Media Query  */
 /* ============ */
+
 /* For Tablet Device */
 @media only screen and (max-width: 768px) and (min-width: 541px) {
-  /* Header */
+  /* Header Section */
   .header .container {
     width: 90%;
+  }
+
+
+  /* Top Player Section */
+  .top-player .player {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .top-player .players img {
+    width: 40px;
+    margin-right: 0;
+  }
+
+  .top-player .players .player-name {
+    font-size: 14px;
   }
 }
 
 
 /* For Mobile Device */
 @media only screen and (max-width: 540px) {
-  /* Header */
+  /* Header Section */
   .header .container {
     width: 100%;
     flex-direction: column;
@@ -113,5 +184,27 @@ li {
 
   .header .nav-item {
     margin-left: 0;
+  }
+
+
+  /* Top Player Section */
+  .top-player .players {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .top-player .player {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .top-player .players img {
+    width: 40px;
+    margin-right: 0;
+  }
+
+  .top-player .players .player-name {
+    font-size: 14px;
   }
 }
