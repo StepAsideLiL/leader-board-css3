@@ -86,7 +86,7 @@ li {
 /* Media Query  */
 /* ============ */
 /* For Tablet Device */
-@media only screen and (max-width: 768px) and (min-width: 426px) {
+@media only screen and (max-width: 768px) and (min-width: 541px) {
   /* Header */
   .header .container {
     width: 90%;
@@ -95,7 +95,7 @@ li {
 
 
 /* For Mobile Device */
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 540px) {
   /* Header */
   .header .container {
     width: 100%;
