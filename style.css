@@ -26,6 +26,9 @@ hr {
   border-top: 1px solid #9F9F9F;
 }
 
+span {
+  vertical-align: bottom;
+}
 
 /* ==================== */
 /* Header Section Style */
@@ -113,7 +116,8 @@ hr {
 }
 
 .top-player .title,
-.top-blog .title {
+.top-blog .title,
+.latest-course .title {
   font-weight: 500;
   font-size: 24px;
   line-height: 36px;
@@ -189,6 +193,85 @@ hr {
 }
 
 
+/* Latest Course Section */
+.latest-course {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 22px 32px;
+  margin-bottom: 30px;
+}
+
+.latest-course .courses {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.latest-course .courses .course {
+  flex: 1;
+  font-family: 'Roboto', sans-serif;
+}
+
+.latest-course .course img {
+  /* width: 224px; */
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+.latest-course .course .course-name {
+  font-weight: 500;
+  font-size: 20.0336px;
+  line-height: 23px;
+  margin-bottom: 8px;
+}
+
+.latest-course .course .course-author,
+.latest-course .course .rating,
+.latest-course .course .duration {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.latest-course .course .course-author {
+  color: #ED6B4F;
+  margin-bottom: 8px;
+}
+
+.latest-course .courses .course-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.latest-course .course .rating {
+  color: #A2A2A2;
+}
+
+.latest-course .course .duration-container {
+  color: #FF4A60;
+}
+
+.font {
+  font-size: 20px;
+}
+
+.material-symbols-outlined.grade {
+  font-variation-settings:
+    'FILL' 200,
+    'wght' 300,
+    'GRAD' 200,
+    'opsz' 48
+}
+
+.material-symbols-outlined.grade.yellow {
+  color: #FFC014;
+}
+
+.material-symbols-outlined.grade.grey {
+  color: #AEAEAE;
+}
+
+
 
 
 
@@ -230,9 +313,14 @@ hr {
     justify-content: center;
     align-items: center;
   }
-  
+
   .top-blog .blogs img {
     width: 100%;
+  }
+
+  /* Latest Courses Section */
+  .latest-course .courses {
+    flex-direction: column;
   }
 }
 
@@ -299,8 +387,13 @@ hr {
     justify-content: center;
     align-items: flex-start;
   }
-  
+
   .top-blog .blogs img {
     width: 100%;
+  }
+
+  /* Latest Courses Section */
+  .latest-course .courses {
+    flex-direction: column;
   }
 }
